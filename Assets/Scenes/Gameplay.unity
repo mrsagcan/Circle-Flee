@@ -288,6 +288,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1b2f9a3c7537b1448738a6d1db4b103, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _rotateSpeed: 90
+  _moveClip: {fileID: 8300000, guid: ca8ccacfffb410d46aad779d0dcb7f63, type: 3}
+  _loseClip: {fileID: 8300000, guid: 227c57a948c929b46be8e7b034a24d3a, type: 3}
+  _gm: {fileID: 1257916436}
+  _explosionPrefab: {fileID: 7595844431136634014, guid: 074f6e0733000114681c92f5571e0fac, type: 3}
 --- !u!50 &328270768
 Rigidbody2D:
   serializedVersion: 4
@@ -413,6 +418,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b682c4bb5892a34692a126a30fd589d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HasGameFinished: 0
+  _minRotateSpeed: 60
+  _maxRotateSpeed: 105
+  _minRotateTime: 0.5
+  _maxRotateTime: 1
 --- !u!61 &748845404
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5588,6 +5598,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2df9e3a6199a5e445bb75f1b6dc0d59d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _scoreText: {fileID: 940742624}
+  _levelSpeeds: 0a000000140000003200000064000000c8000000
+  _levelMaxValues: 320000009600000090010000e8030000d0070000
 --- !u!4 &1257916437
 Transform:
   m_ObjectHideFlags: 0
