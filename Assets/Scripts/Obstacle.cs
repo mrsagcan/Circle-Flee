@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Obstacle : MonoBehaviour
 {
-    public bool HasGameFinished;
 
     private float _currentRotateSpeed;
     private float _rotateTime;
@@ -14,8 +13,6 @@ public class Obstacle : MonoBehaviour
 
     private void Awake()
     {
-        HasGameFinished = false;
-
         SetObstacleRotation();
     }
 
@@ -31,7 +28,6 @@ public class Obstacle : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (HasGameFinished) return;
         transform.Rotate(0, 0, _currentRotateSpeed * Time.fixedDeltaTime);
     }
 
